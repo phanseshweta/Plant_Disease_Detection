@@ -1,4 +1,4 @@
-**Plant Disease Detection**
+*Plant Disease Detection*
 
 This project uses machine learning to detect diseases in tomato plants from images. It is built using TensorFlow/Keras and includes a Convolutional Neural Network (CNN) model trained on the Tomato Plant Disease Dataset. The goal of this project is to help farmers and gardeners quickly identify diseases in tomato plants, enabling timely intervention and reducing crop losses.
 
@@ -18,25 +18,25 @@ Here’s an example of the model’s predictions on a tomato plant image:
 --------------------------------------------------------------------------------------------
 Key Features
 
-Disease Detection: Accurately identifies various tomato plant diseases from images.
+>Disease Detection: Accurately identifies various tomato plant diseases from images.
 
-CNN Model: Uses a deep learning model based on Convolutional Neural Networks (CNNs) for high accuracy.
+>CNN Model: Uses a deep learning model based on Convolutional Neural Networks (CNNs) for high accuracy.
 
-User-Friendly: Simple scripts for training, evaluation, and prediction.
+>User-Friendly: Simple scripts for training, evaluation, and prediction.
 
-Scalable: Can be extended to detect diseases in other plants or crops.
+>Scalable: Can be extended to detect diseases in other plants or crops.
 
 --------------------------------------------------------------------------------------------
 
 How It Works
 
-Input: The user provides an image of a tomato plant.
+>Input: The user provides an image of a tomato plant.
 
-Preprocessing: The image is resized and normalized to match the input requirements of the CNN model.
+>Preprocessing: The image is resized and normalized to match the input requirements of the CNN model.
 
-Prediction: The trained CNN model analyzes the image and predicts the disease (or identifies the plant as healthy).
+>Prediction: The trained CNN model analyzes the image and predicts the disease (or identifies the plant as healthy).
 
-Output: The model returns the predicted disease along with confidence scores.
+>Output: The model returns the predicted disease along with confidence scores.
 
 --------------------------------------------------------------------------------------------
 
@@ -88,13 +88,13 @@ Performance
 
 The model achieves the following performance metrics:
 
-  Training Accuracy: 98.15%
+  >Training Accuracy: 98.15%
 
-  Training Loss: 0.117
+  >Training Loss: 0.117
 
-  Validation Accuracy: 96.20%
+  >Validation Accuracy: 96.20%
 
-  Validation Loss: 0.166
+  >Validation Loss: 0.166
 
 ----------------------------------------------------------------------------------------
 How to Use
@@ -175,6 +175,7 @@ tomato-disease-detection/
  Acknowledgments
  
 Thanks to TensorFlow for providing the machine learning framework.
+
 Dataset sourced from PlantVillage.
 
 
