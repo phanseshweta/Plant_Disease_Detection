@@ -7,7 +7,7 @@ Here’s an example of the model’s predictions on a tomato plant image:
 ![Screenshot 2025-03-22 114347](https://github.com/user-attachments/assets/9614fb1e-6a9e-4e2d-9a75-2be25da689c1)**
 
 --------------------------------------------------------------------------------------------
-**Key Features**
+*Key Features*
 Disease Detection: Accurately identifies various tomato plant diseases from images.
 
 CNN Model: Uses a deep learning model based on Convolutional Neural Networks (CNNs) for high accuracy.
@@ -17,7 +17,7 @@ User-Friendly: Simple scripts for training, evaluation, and prediction.
 Scalable: Can be extended to detect diseases in other plants or crops.
 --------------------------------------------------------------------------------------------
 
-** How It Works**
+* How It Works*
 Input: The user provides an image of a tomato plant.
 
 Preprocessing: The image is resized and normalized to match the input requirements of the CNN model.
@@ -74,13 +74,14 @@ Training Loss: 0.117
 Validation Accuracy: 96.20%
 
 Validation Loss: 0.166
+
 ----------------------------------------------------------------------------------------
 How to Use
 1. Clone the Repository
 Clone the repository to your local machine:
 
 bash
-git clone https://github.com/your-username/tomato-disease-detection.git
+git clone https://github.com/phanseshweta/tomato-disease-detection.git
 cd tomato-disease-detection
 2. Install Dependencies
 Install the required Python libraries:
