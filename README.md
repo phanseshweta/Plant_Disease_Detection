@@ -4,7 +4,7 @@ This project uses machine learning to detect diseases in tomato plants from imag
 
 
 --------------------------------------------------------------------------------------------
-Output Example
+
 Here’s an example of the model’s predictions on a tomato plant image:
 ![Screenshot 2025-03-22 114347](https://github.com/user-attachments/assets/9614fb1e-6a9e-4e2d-9a75-2be25da689c1)
 ![Output jpeg (2)](https://github.com/user-attachments/assets/844fa80d-ab20-47ea-86eb-20c0d55b59ea)
@@ -175,8 +175,6 @@ tomato-disease-detection/
 -------------------------------------------------------------------------------------
 
  Acknowledgments
- 
-Thanks to TensorFlow for providing the machine learning framework.
 
 Dataset sourced from PlantVillage.
 
