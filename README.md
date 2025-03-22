@@ -1,6 +1,6 @@
-** Plant Disease Detection**
+ Plant Disease Detection
  
-This project uses machine learning to detect diseases in tomato plants from images. It is built using TensorFlow/Keras and includes a Convolutional Neural Network (CNN) model trained on the Tomato Plant Disease Dataset. The goal of this project is to help farmers and gardeners quickly identify diseases in tomato plants, enabling timely intervention and reducing crop losses.
+**This project uses machine learning to detect diseases in tomato plants from images. It is built using TensorFlow/Keras and includes a Convolutional Neural Network (CNN) model trained on the Tomato Plant Disease Dataset. The goal of this project is to help farmers and gardeners quickly identify diseases in tomato plants, enabling timely intervention and reducing crop losses.**
 --------------------------------------------------------------------------------------------
 Output Example
 
@@ -94,16 +94,16 @@ Organize your dataset into the following structure:
 
 
 dataset/
-├── train/                # Training images
-│   ├── Bacterial_spot/   # Images of plants with Bacterial spot
-│   ├── Early_blight/     # Images of plants with Early blight
-│   ├── healthy/          # Images of healthy plants
-│   └── ...               # Other disease classes
-├── val/                  # Validation images
-│   ├── Bacterial_spot/   # Images of plants with Bacterial spot
-│   ├── Early_blight/     # Images of plants with Early blight
-│   ├── healthy/          # Images of healthy plants
-│   └── ...               # Other disease classes
+├── train/                
+│   ├── Bacterial_spot/  
+│   ├── Early_blight/    
+│   ├── healthy/         
+│   └── ...             
+├── val/                  
+│   ├── Bacterial_spot/ 
+│   ├── Early_blight/     
+│   ├── healthy/          
+│   └── ...               s
 4. Train the Model
 Train the CNN model using the Jupyter Notebook:
 
@@ -139,13 +139,13 @@ The app will display the predicted disease.
 ├── bestModel.keras          
 ├── README.md               
 ├── test_image.jpg        
-└── train.ipynb              
+└── train.ipynb  **            
 -------------------------------------------------------------------------------------
 
  Acknowledgments
 Thanks to TensorFlow for providing the machine learning framework.
 
-****Dataset sourced from PlantVillage.****
+Dataset sourced from PlantVillage.
 --------------------------------------------------------------------------------------
 
 
