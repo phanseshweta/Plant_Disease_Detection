@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Disease Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tomato Disease Prediction</h1>
+        
+        <!-- Image Preview -->
+        <div class="image-preview">
+            <img id="previewImage" src="" alt="Image Preview" style="display: none;">
+        </div>
+
+        <!-- File Upload Form -->
+        <form id="uploadForm">
+            <label for="fileInput" class="custom-file-input" aria-label="Upload Image">
+                <i class="fas fa-upload"></i> Choose an Image
+            </label>
+            <input type="file" id="fileInput" name="file" accept="image/*" required>
+            <span id="fileName">No file chosen</span>
+            <button type="submit">Predict</button>
+        </form>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" style="display: none;">
+            <div class="spinner"></div>
+            <p>Processing your image...</p>
+        </div>
+
+        <!-- Prediction Result -->
+        <div id="result" style="display: none;">
+            <h2>Prediction Result</h2>
+            <p><strong>Disease:</strong> <span id="disease"></span></p>
+            <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+            <p><strong>Description:</strong> <span id="description"></span></p>
+            <p><strong>Treatment:</strong></p>
+            <ul id="treatment"></ul>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" style="display: none; color: red; margin-top: 20px;">
+            <p id="errorText"></p>
+        </div>
+    </div>
+
+    <script>
+        // Handle file input change (image preview)
+        document.getElementById("fileInput").addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById("fileName").textContent = file.name;
+
+                // Show image preview
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const previewImage = document.getElementById("previewImage");
+                    previewImage.src = e.target.result;
+                    previewImage.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Handle form submission
+        document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const fileInput = document.getElementById("fileInput");
+            const fileNameDisplay = document.getElementById("fileName");
+            const treatmentList = document.getElementById("treatment");
+            const resultSection = document.getElementById("result");
+            const diseaseDisplay = document.getElementById("disease");
+            const confidenceDisplay = document.getElementById("confidence");
+            const descriptionDisplay = document.getElementById("description");
+            const errorMessage = document.getElementById("errorMessage");
+            const errorText = document.getElementById("errorText");
+            const loadingSpinner = document.getElementById("loadingSpinner");
+
+            // Hide previous results and errors
+            resultSection.style.display = "none";
+            errorMessage.style.display = "none";
+
+            if (!fileInput.files.length) {
+                alert("Please select an image first.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            try {
+                // Show loading spinner
+                loadingSpinner.style.display = "block";
+
+                // Send request to the backend
+                const response = await fetch("/predict", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.detail || "Server response was not OK.");
+                }
+
+                // Parse the JSON response
+                const result = await response.json();
+                console.log(result); // Debugging: Log the response to the console
+
+                // Display the prediction results
+                diseaseDisplay.textContent = result.predicted_disease;
+                confidenceDisplay.textContent = result.confidence.toFixed(2);
+                descriptionDisplay.textContent = result.description || "No description available.";
+
+                // Clear previous treatment list
+                treatmentList.innerHTML = "";
+
+                // Display treatment information
+                if (result.treatment && Array.isArray(result.treatment)) {
+                    result.treatment.forEach((item) => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        treatmentList.appendChild(li);
+                    });
+                } else {
+                    const li = document.createElement("li");
+                    li.textContent = "No treatment information available.";
+                    treatmentList.appendChild(li);
+                }
+
+                // Show the result section
+                resultSection.style.display = "block";
+
+            } catch (error) {
+                console.error("Error:", error);
+
+                // Display error message
+                errorText.textContent = error.message;
+                errorMessage.style.display = "block";
+            } finally {
+                // Hide loading spinner
+                loadingSpinner.style.display = "none";
+
+                // Reset the form
+                fileInput.value = ""; // Clear the file input
+                document.getElementById("fileName").textContent = "No file chosen";
+                document.getElementById("previewImage").style.display = "none"; // Hide the image preview
+            }
+        });
+    </script>
+</body>
+</html>

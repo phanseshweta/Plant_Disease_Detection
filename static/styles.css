@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('tomato_bg_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+
+.container {
+    background: rgba(181, 194, 185, 0.82); /* 88% transparent white */
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    backdrop-filter: blur(10px); /* Optional blur effect */
+}
+
+
+h1 {
+    color: #062820;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.image-preview img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+.custom-file-input {
+    background: linear-gradient(45deg, #2d9b7c, #1b6d5e);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.custom-file-input:hover {
+    background: linear-gradient(45deg, #095849, #2d9b7c);
+    box-shadow: 0 4px 15px rgba(29, 108, 85, 0.4);
+}
+
+#fileName {
+    display: block;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+button {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #2d9b7c, #1b6d5e);
+    color: rgba(235, 232, 232, 0.82);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #1b6d5e, #125244);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin: 1rem 0;
+    overflow: hidden;
+    display: none;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #2d9b7c, #1b6d5e);
+    transition: width 0.5s ease;
+}
+
+#result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #c8cdd1;
+    border-radius: 12px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+#treatment {
+    list-style: none;
+    padding-left: 0;
+}
+
+#treatment li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+#treatment li:before {
+    content: "✓";
+    color: #2d9b7c;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: none;
+}
