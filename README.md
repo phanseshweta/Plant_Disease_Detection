@@ -157,6 +157,7 @@ The app will display the predicted disease.
 -------------------------------------------------------------------------------------------
  Project Structure
 
+
 tomato-disease-detection/
 ├── ipynb_checkpoints/        
 ├── __pycache__/            
