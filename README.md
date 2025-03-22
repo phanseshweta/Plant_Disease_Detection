@@ -1,16 +1,16 @@
- **Plant Disease Detection**
- 
+Plant Disease Detection
 This project uses machine learning to detect diseases in tomato plants from images. It is built using TensorFlow/Keras and includes a Convolutional Neural Network (CNN) model trained on the Tomato Plant Disease Dataset. The goal of this project is to help farmers and gardeners quickly identify diseases in tomato plants, enabling timely intervention and reducing crop losses.
+
+
 --------------------------------------------------------------------------------------------
 Output Example
-
 Here’s an example of the model’s predictions on a tomato plant image:
 ![Screenshot 2025-03-22 114347](https://github.com/user-attachments/assets/9614fb1e-6a9e-4e2d-9a75-2be25da689c1)
 
 ![Output jpeg (2)](https://github.com/user-attachments/assets/844fa80d-ab20-47ea-86eb-20c0d55b59ea)
 
 --------------------------------------------------------------------------------------------
-*Key Features*
+Key Features
 Disease Detection: Accurately identifies various tomato plant diseases from images.
 
 CNN Model: Uses a deep learning model based on Convolutional Neural Networks (CNNs) for high accuracy.
@@ -18,20 +18,21 @@ CNN Model: Uses a deep learning model based on Convolutional Neural Networks (CN
 User-Friendly: Simple scripts for training, evaluation, and prediction.
 
 Scalable: Can be extended to detect diseases in other plants or crops.
+
 --------------------------------------------------------------------------------------------
 
-* How It Works*
+How It Works
 Input: The user provides an image of a tomato plant.
 
 Preprocessing: The image is resized and normalized to match the input requirements of the CNN model.
 
 Prediction: The trained CNN model analyzes the image and predicts the disease (or identifies the plant as healthy).
-**
-Output: The model returns the predicted disease along with confidence scores.**********
+
+Output: The model returns the predicted disease along with confidence scores.
+
 --------------------------------------------------------------------------------------------
 
-**Technical Details**
-
+Technical Details
 Model Architecture
 The CNN model consists of the following layers:
 
@@ -44,6 +45,9 @@ Global Average Pooling Layer: Reduces spatial dimensions.
 Dense Layers: Fully connected layers with Dropout to prevent overfitting.
 
 Output Layer: Softmax activation for multi-class classification.
+
+------------------------------------------------------------------------------
+
 
 Dataset
 The model is trained on the Tomato Plant Disease Dataset, which contains images of tomato plants with the following diseases:
@@ -66,7 +70,8 @@ Tomato mosaic virus
 
 Tomato Yellow Leaf Curl Virus
 
-*Healthy plants*
+Healthy plants
+
 ----------------------------------------------------------------------------------------
 Performance
 The model achieves the following performance metrics:
@@ -85,9 +90,8 @@ How to Use
 Clone the repository to your local machine:
 
 bash
-git clone [https://github.com/phanseshweta/Plant_Disease_Detection.git.git]
+git clone https://github.com/phanseshweta/Plant_Disease_Detection.git
 cd Plant_Disease_Detection
-
 2. Install Dependencies
 Install the required Python libraries:
 
@@ -108,8 +112,6 @@ dataset/
 │   ├── Early_blight/     
 │   ├── healthy/          
 │   └── ...              
-
-
 4. Train the Model
 Train the CNN model using the Jupyter Notebook:
 
@@ -146,12 +148,14 @@ tomato-disease-detection/
 ├── README.md               
 ├── test_image.jpg        
 └── train.ipynb            
+
 -------------------------------------------------------------------------------------
 
  Acknowledgments
 Thanks to TensorFlow for providing the machine learning framework.
+Dataset sourced from PlantVillage.
 
-**Dataset sourced from PlantVillage.**
+
 --------------------------------------------------------------------------------------
 
 
