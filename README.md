@@ -43,18 +43,19 @@ How It Works
 Technical Details
 
  Model Architecture
-   The CNN model consists of the following layers:
+   
+   >The CNN model consists of the following layers:
 
-   Input Layer: Accepts images of size (128, 128, 3).
+   >Input Layer: Accepts images of size (128, 128, 3).
 
-   Conv2D Layers: Multiple convolutional layers with Batch Normalization and MaxPooling for 
-   feature extraction.
+   >Conv2D Layers: Multiple convolutional layers with Batch Normalization and MaxPooling 
+    for feature extraction.
 
-   Global Average Pooling Layer: Reduces spatial dimensions.
+   >Global Average Pooling Layer: Reduces spatial dimensions.
 
-   Dense Layers: Fully connected layers with Dropout to prevent overfitting.
+   >Dense Layers: Fully connected layers with Dropout to prevent overfitting.
 
-   Output Layer: Softmax activation for multi-class classification.  
+   >Output Layer: Softmax activation for multi-class classification.  
 
 ------------------------------------------------------------------------------
 
@@ -154,7 +155,7 @@ Upload an image of a tomato plant using the web interface.
 The app will display the predicted disease.
 
 -------------------------------------------------------------------------------------------
-📂 Project Structure
+ Project Structure
 
 tomato-disease-detection/
 ├── ipynb_checkpoints/        
