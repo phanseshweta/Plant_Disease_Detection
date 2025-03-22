@@ -148,7 +148,7 @@ Start the Flask app:
 
 bash
 python app.py
-Open your browser and navigate to http://127.0.0.1:5000 /.
+Open your browser and navigate to http: // 127.0.0.1:5000 /.
 
 Upload an image of a tomato plant using the web interface.
 
