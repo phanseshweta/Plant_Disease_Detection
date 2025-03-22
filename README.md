@@ -1,4 +1,5 @@
- **Plant Disease Detection**
+** Plant Disease Detection**
+ 
 This project uses machine learning to detect diseases in tomato plants from images. It is built using TensorFlow/Keras and includes a Convolutional Neural Network (CNN) model trained on the Tomato Plant Disease Dataset. The goal of this project is to help farmers and gardeners quickly identify diseases in tomato plants, enabling timely intervention and reducing crop losses.
 --------------------------------------------------------------------------------------------
 Output Example
@@ -23,8 +24,8 @@ Input: The user provides an image of a tomato plant.
 Preprocessing: The image is resized and normalized to match the input requirements of the CNN model.
 
 Prediction: The trained CNN model analyzes the image and predicts the disease (or identifies the plant as healthy).
-
-Output: The model returns the predicted disease along with confidence scores.
+**
+Output: The model returns the predicted disease along with confidence scores.**********
 --------------------------------------------------------------------------------------------
 
 **Technical Details**
@@ -81,7 +82,7 @@ How to Use
 Clone the repository to your local machine:
 
 bash
-git clone https://github.com/phanseshweta/tomato-disease-detection.git
+git clone [https://github.com/phanseshweta/Plant_Disease_Detection.git.git]
 cd tomato-disease-detection
 2. Install Dependencies
 Install the required Python libraries:
@@ -126,25 +127,25 @@ The app will display the predicted disease.
 -------------------------------------------------------------------------------------------
 📂 Project Structure
 
-tomato-disease-detection/
-├── ipynb_checkpoints/        # Jupyter Notebook checkpoints (auto-generated)
-├── __pycache__/              # Python compiled files (auto-generated)
-├── dataset/                  # Dataset directory
-│   ├── train/                # Training images
-│   └── val/                  # Validation images
-├── static/                   # Static files for the Flask app (CSS, JS, images)
-├── templates/                # HTML templates for the Flask app
-├── app.py                    # Flask app for deployment (Python Source File)
-├── bestModel.keras           # Trained Keras model file
-├── README.md                 # Project documentation (Markdown Source File)
-├── test_image.jpg            # Sample image for testing (JPG File)
-└── train.ipynb               # Jupyter Notebook for training the model
+**tomato-disease-detection/
+├── ipynb_checkpoints/        
+├── __pycache__/            
+├── dataset/             
+│   ├── train/          
+│   └── val/                 
+├── static/                  
+├── templates/              
+├── app.py                   
+├── bestModel.keras          
+├── README.md               
+├── test_image.jpg        
+└── train.ipynb              
 -------------------------------------------------------------------------------------
 
  Acknowledgments
 Thanks to TensorFlow for providing the machine learning framework.
 
-Dataset sourced from PlantVillage.
+****Dataset sourced from PlantVillage.****
 --------------------------------------------------------------------------------------
 
 
