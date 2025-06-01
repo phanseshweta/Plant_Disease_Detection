@@ -1,13 +1,17 @@
-**Plant Disease Detection
+**Plant Disease Detection**
 
 This project leverages machine learning to detect diseases in tomato plants using image data. Built with TensorFlow/Keras, it employs a Convolutional Neural Network (CNN) trained on the Tomato Plant Disease Dataset. The aim is to assist farmers and gardeners in quickly identifying plant diseases, enabling early intervention and reducing crop losses.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-*Example Predictions
+*Example Predictions*
+
+https://github.com/user-attachments/assets/6d3b0d32-a4f4-4bbb-befd-796447505fc4
 
 
-*Key Feature
+-------------------------------------------------------------------------------------------
+
+*Key Feature*
 
   Disease Detection: Accurately classifies a range of tomato plant diseases from images.
 
@@ -20,7 +24,7 @@ This project leverages machine learning to detect diseases in tomato plants usin
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*How It Works
+*How It Works*
 Input: User uploads an image of a tomato plant.
 
 Preprocessing: Image is resized and normalized to fit the CNN’s input format.
@@ -31,7 +35,7 @@ Output: The prediction is displayed along with confidence scores.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Model Architecture
+*Model Architecture*
 The CNN model includes the following layers:
 
 Input Layer: Accepts images of shape (128, 128, 3).
@@ -46,7 +50,7 @@ Output Layer: Softmax activation for multi-class classification.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Dataset
+*Dataset*
 The model is trained on the Tomato Plant Disease Dataset, which includes the following classes:
 
 Bacterial Spot
@@ -71,7 +75,7 @@ Healthy Plants
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Performance Metrics
+*Performance Metrics*
 Training Accuracy: 98.15%
 
 Training Loss: 0.117
@@ -82,7 +86,7 @@ Validation Loss: 0.166
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*How to Use
+*How to Use*
 1. Clone the Repository
   git clone https://github.com/phanseshweta/Plant_Disease_Detection.git
   cd Plant_Disease_Detection
@@ -93,9 +97,7 @@ Validation Loss: 0.166
 
 
 ![image](https://github.com/user-attachments/assets/11ff6b6b-990d-4141-85fe-6779b48e3f5e)
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-*4. Train the Model
+4. Train the Model
 Open train.ipynb in Jupyter Notebook and run all cells to:
 
 Preprocess the data
