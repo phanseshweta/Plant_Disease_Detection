@@ -100,20 +100,19 @@ Training Accuracy: 98.15%
 ![image](https://github.com/user-attachments/assets/11ff6b6b-990d-4141-85fe-6779b48e3f5e)
 
 4. Train the Model
-  Open train.ipynb in Jupyter Notebook and run all cells to:
-  
-  Preprocess the data
-  
-  Train the model
-  
-  Save the trained model as bestModel.keras
+    Open train.ipynb in Jupyter Notebook and run all cells to:
+    
+    Preprocess the data
+    
+    Train the model
+    
+    Save the trained model as bestModel.keras
 
 5. Run the Flask App
-  Start the web app using:
-  python app.py
-  Then open your browser and go to: http://127.0.0.1:5000
-  
-  Upload a tomato plant image through the interface to see the predicted disease.
+    Start the web app using:
+    python app.py
+    Then open your browser and go to: http://127.0.0.1:5000
+    Upload a tomato plant image through the interface to see the predicted disease.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
