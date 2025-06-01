@@ -1,6 +1,6 @@
 **Plant Disease Detection**
 
-This project leverages machine learning to detect diseases in tomato plants using image data. Built with TensorFlow/Keras, it employs a Convolutional Neural Network (CNN) trained on the Tomato Plant Disease Dataset. The aim is to assist farmers and gardeners in quickly identifying plant diseases, enabling early intervention and reducing crop losses.
+This project uses machine learning to detect diseases in tomato plants from images. It is built using TensorFlow/Keras and includes a Convolutional Neural Network (CNN) model trained on the Tomato Plant Disease Dataset. The goal of this project is to help farmers and gardeners quickly identify diseases in tomato plants, enabling timely intervention and reducing crop losses.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,6 +52,7 @@ https://github.com/user-attachments/assets/6d3b0d32-a4f4-4bbb-befd-796447505fc4
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Dataset*
+
 The model is trained on the Tomato Plant Disease Dataset, which includes the following classes:
 
     Bacterial Spot
@@ -77,7 +78,8 @@ The model is trained on the Tomato Plant Disease Dataset, which includes the fol
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Performance Metrics*
-Training Accuracy: 98.15%
+
+>Training Accuracy: 98.15%
 
 >Training Loss: 0.117
 
