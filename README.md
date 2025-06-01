@@ -98,6 +98,7 @@ Training Accuracy: 98.15%
 
 
 ![image](https://github.com/user-attachments/assets/11ff6b6b-990d-4141-85fe-6779b48e3f5e)
+
 4. Train the Model
   Open train.ipynb in Jupyter Notebook and run all cells to:
   
