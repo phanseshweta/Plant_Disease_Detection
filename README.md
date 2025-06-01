@@ -125,6 +125,7 @@ The model is trained on the Tomato Plant Disease Dataset, which includes the fol
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Acknowledgments*
+
 Dataset sourced from PlantVillage
 
 
